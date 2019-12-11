@@ -13,18 +13,20 @@
         android:fontFamily="monospace"
         android:text="Hello World!"
         android:textAlignment="center"
-        android:textSize="22dp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.1" />
 
+
     <Button
         android:id="@+id/menu_tn_ID"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/menu_btn"
         android:text="menu"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -35,9 +37,10 @@
 
     <Button
         android:id="@+id/settings_btn_ID"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/settings_btn"
         android:text="Settings"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -48,9 +51,9 @@
 
     <Button
         android:id="@+id/apply_btn_ID"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:text="Apply"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -59,13 +62,127 @@
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 
+
+
+
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/bright"
+        android:progress="50"
+        android:max="100"
         android:layout_width="200dp"
         android:layout_height="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/apply_btn_ID"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+    <TextView
+        android:id="@+id/bright_val"
+        android:text="50%"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/bright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/bright"
+        app:layout_constraintTop_toTopOf="@+id/bright"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+
+
+    <SeekBar
+        android:id="@+id/R"
+        android:progress="50"
+        android:max="100"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+    <TextView
+        android:id="@+id/R_val"
+        android:text="50%"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/R"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/R"
+        app:layout_constraintTop_toTopOf="@+id/R"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+
+    <SeekBar
+        android:id="@+id/G"
+        android:progress="50"
+        android:max="100"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/apply_btn_ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.80" />
+    <TextView
+        android:id="@+id/G_val"
+        android:text="50%"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/G"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/G"
+        app:layout_constraintTop_toTopOf="@+id/G"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <SeekBar
+        android:id="@+id/B"
+        android:progress="50"
+        android:max="100"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/apply_btn_ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+    <TextView
+        android:id="@+id/B_val"
+        android:text="50%"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/B"
+        app:layout_constraintTop_toTopOf="@+id/B"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+
+    <Switch
+        android:id="@+id/mode_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"
+        app:layout_constraintBottom_toBottomOf="@+id/apply_btn_ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
