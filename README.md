@@ -1,2 +1,2 @@
 # Samsung_Project
-My project!
+My project starts!
