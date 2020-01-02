@@ -8,4 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="MySwitchStyle" parent="Widget.AppCompat.CompoundButton.Switch" >
+        <item name="thumbTint">@color/selector_switch_thumb</item>
+        <item name="track">@drawable/auto_switch_shape_thumb</item>
+    </style>
+
+
 </resources>
